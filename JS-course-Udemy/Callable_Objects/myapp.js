@@ -20,6 +20,7 @@ name1( { firstname:"Mali", lastname:"Dinc"});
 // Callable Object -- functions are callable object.
 
 function name2 ( fullname ) {
+    
     return fullname();
 }
 
