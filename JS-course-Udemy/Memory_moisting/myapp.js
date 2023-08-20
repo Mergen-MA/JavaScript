@@ -12,3 +12,5 @@ function printName()
     
     return "John Doe";
 }
+
+// JS parsor reads line by line, lexically-left-to-right
