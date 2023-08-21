@@ -1,41 +1,19 @@
 var car = {
-    make: "volvo",
-    speed: 160,
-    engine: {
-        size: 2.0,
-        make: "bmw",
-        fuel: "petrol",
-        pistons:[
-            { maker: "BMW" },
-            { maker: "BMW2" }
+    maker: "volvo",
+    headGasket: {
+        pots:[
+            "piston1",
+             "piston2"
         ]
-    },
-    drive: function(){ return "drive"; }
-};
+    }
+}
 
-var array = [ 
-    "string",
-    100,
-    [ "embed", 200 ],
-    { car: "ford" },
-    function(){ return "drive"; }
-];
+function runExpression () {
+    var a = 10;
 
-console.log( car.make );
+    function add () {
+        return a + 90;
+    }
 
-// Member Creation, Assignment and Deletion
-
-// car = ["string"]
-
-// change the value of one element
-//car.make = "ford";
-
-// car.speed *= 2 -- speed is 320
-
-// Create new element
-// car.model = "v60"
-
-// car.stop = function() { return "stop";}; added new function
-
-// Delete an element
-// delete.car.color
+    return add();
+}
